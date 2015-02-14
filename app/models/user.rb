@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+require 'bcrypt'
 has_many :posts
 has_many :comments
 			

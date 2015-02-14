@@ -1,0 +1,14 @@
+<%= form_for [:admin, @post], url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  
+  <%= f.text_field :title %>
+  
+	####says undefined method 'body' - how do I define body?
+
+	<%= f.text_area :post_text, size: "60x12", class: "form-control", rows: "3" %>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+
+####Where do I include the bootstrap??
+<textarea class="form-control" rows="3"></textarea>

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'blog#home'
   get 'contribute' => 'blog#contribute'
   get 'about' => 'blog#about'
+  get 'posts' => 'posts#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
